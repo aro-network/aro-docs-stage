@@ -6,4 +6,4 @@ sidebar_label: Privacy Policy
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Privacy Policy
-Privacy policy for ARO Network..
+Privacy policy for ARO Network...
