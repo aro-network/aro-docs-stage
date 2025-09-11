@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'aro-network/aro-docs'
+    if: github.repository == 'aro-network/aro-docs-stage'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
