@@ -1,3 +1,8 @@
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  
 name: Github Pages Deploy
 on:
   workflow_dispatch:
