@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.1">
 <title data-rh="true">Installation Guide | ARO Network Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.aro.network/node-operator-guide/aro-pod/aro-pod-installation-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Installation Guide | ARO Network Docs"><meta data-rh="true" name="description" content="Get Started with Your New ARO Pod!"><meta data-rh="true" property="og:description" content="Get Started with Your New ARO Pod!"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://docs.aro.network/node-operator-guide/aro-pod/aro-pod-installation-guide"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-pod/aro-pod-installation-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.aro.network/node-operator-guide/aro-pod/aro-pod-installation-guide" hreflang="x-default"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.150b87aa.css">
-<script src="/assets/js/runtime~main.a6819004.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.804f5dd5.js" defer="defer"></script>
 <script src="/assets/js/main.17792162.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -19,33 +19,12 @@
 <p>To choose the best Edge Node for your needs, see <a href="/node-operator-guide/become-operator/choose-node">this guide</a>.</p>
 </blockquote>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-plug-in">Step 1: Plug In<a href="#step-1-plug-in" class="hash-link" aria-label="Direct link to Step 1: Plug In" title="Direct link to Step 1: Plug In">​</a></h3>
-<p></p><p style="color:red"><strong>We strongly recommend that you complete the device&#x27;s connection and setup as described in the Step 1 tutorial. Otherwise, the device&#x27;s performance may be significantly compromised.</strong></p>
-<img decoding="async" loading="lazy" alt="01" src="/assets/images/aro-pod-networking-1-2f8eb03963f8c0193051bf4764dfff33.png" width="1488" height="756" class="img_ev3q"><p></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-11-connect-aro-pod-to-the-internet">Step 1.1: Connect ARO Pod to the Internet<a href="#step-11-connect-aro-pod-to-the-internet" class="hash-link" aria-label="Direct link to Step 1.1: Connect ARO Pod to the Internet" title="Direct link to Step 1.1: Connect ARO Pod to the Internet">​</a></h4>
-<ul>
-<li><strong>Optical Networking Terminal (ONT)</strong> is the device at the end of a fiber optic network that converts the light signals from the fiber optic cable into signals that your devices can read, like routers and ARO Pod.</li>
-<li>Directly connect your ARO Pod to the ONT via Ethernet cable, as showed in the diagram above.</li>
-<li><strong>DO NOT connect your ARO Pod to the Wi-Fi router!</strong></li>
-<li>If you have a Wi-Fi router, connect it to the ONT from another Ethernet port so you can keep using it. If your ONT device only has one Ethernet port, you may use an extra Layer 2 Switch to extend the Ethernet port.</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="step-12-enable-upnp-on-your-ont">Step 1.2: Enable UPnP on your ONT<a href="#step-12-enable-upnp-on-your-ont" class="hash-link" aria-label="Direct link to Step 1.2: Enable UPnP on your ONT" title="Direct link to Step 1.2: Enable UPnP on your ONT">​</a></h4>
 <ol>
-<li>Connect to Your ONT: Connect a computer to the ONT using an Ethernet cable or connect to its Wi-Fi network.</li>
-<li>Look for a sticker on the ONT itself or in your network documentation to find its default IP address.</li>
-<li>Open a web browser and type the ONT&#x27;s IP address into the address bar, then press Enter.</li>
-<li>Once logged in, look for an advanced or network settings menu. The UPnP setting is typically in a section such as:<!-- -->
-<ul>
-<li>Advanced &gt; Advanced Setup &gt; UPnP</li>
-<li>More Functions &gt; Network Settings &gt; UPnP</li>
-<li>Network Settings &gt; UPnP</li>
-<li>Tools &gt; Misc. &gt; UPnP Settings</li>
-</ul>
-</li>
-<li>Select or check the option to turn UPnP on. Click the &quot;Save&quot; or &quot;Apply&quot; button to confirm your changes. For some devices, you may need to restart your ONT to apply the new settings.</li>
+<li>Unbox your ARO Pod and remove all contents from the packaging.</li>
+<li>Connect the power cable to your ARO Pod and plug it into a power outlet.</li>
+<li>Use the provided Ethernet cable to connect your ARO Pod to your router or switch.</li>
+<li>Power on the device and wait for it to fully boot up. Once it is online, proceed to the next step.</li>
 </ol>
-<blockquote>
-<p>For more information on the general concepts and approaches of optimizing your network, please refer to <a href="/node-operator-guide/improve-performance/network-optimization">this guide</a></p>
-</blockquote>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-add-device-to-your-dashboard">Step 2: Add Device to Your Dashboard<a href="#step-2-add-device-to-your-dashboard" class="hash-link" aria-label="Direct link to Step 2: Add Device to Your Dashboard" title="Direct link to Step 2: Add Device to Your Dashboard">​</a></h3>
 <p>Ensure you’ve created an <strong>ARO Account</strong> (ARO ID) and are logged in to the Dashboard.</p>
 <blockquote>
